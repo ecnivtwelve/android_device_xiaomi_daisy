@@ -1,2 +1,0 @@
-allow cnd hostapd:process { sigkill };
-allow cnd sysfs:file { open read };
