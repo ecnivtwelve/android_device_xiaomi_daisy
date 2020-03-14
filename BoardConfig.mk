@@ -210,9 +210,7 @@ VENDOR_SECURITY_PATCH := 2019-11-05
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 
 # Sepolicy
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # System As Root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
