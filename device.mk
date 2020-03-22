@@ -124,6 +124,8 @@ PRODUCT_PACKAGES += \
 # A2DP
 PRODUCT_PACKAGES += \
   audio.a2dp.default \
+  android.hardware.bluetooth.audio@2.0 \
+  android.hardware.bluetooth.audio@2.0-impl \
   android.hardware.bluetooth.a2dp@1.0-impl \
   android.hardware.bluetooth.a2dp@1.0-service
 
@@ -149,8 +151,19 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    android.frameworks.cameraservice.common@2.0 \
+    android.frameworks.cameraservice.device@2.0 \
+    android.frameworks.cameraservice.service@2.0 \
+    android.frameworks.displayservice@1.0_32 \
     android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service
+    android.hardware.camera.provider@2.4-service \
+    android.hardware.camera.provider@2.5 \
+#    Footej \
+#    MiuiCamera
+
+# MiuiCamera
+#PRODUCT_PROPERTY_OVERRIDES += \
+   # camera.shutter_sound.blacklist=com.android.camera    
 
 # Consumerir
 PRODUCT_PACKAGES += \
@@ -170,6 +183,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
+    vendor.display.config@1.9 \
+    vendor.display.config@1.9_vendor \
     copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
@@ -236,7 +251,7 @@ PRODUCT_PACKAGES += \
 
 # HW crypto
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.cryptfshw@1.0-service-ioctl-qti
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -486,3 +501,60 @@ PRODUCT_BOOT_JARS += \
 
 # Include AmbientSense if it's available
 -include vendor/ambientmusic/AmbientMusic.mk
+
+# Cerberus
+#PRODUCT_PACKAGES += \
+#    Cerberus
+
+# SwiftKey
+PRODUCT_PACKAGES += \
+    SwiftKey
+
+# AuroraStore
+#PRODUCT_PACKAGES += \
+#    AuroraStore
+
+# SemcMusic
+PRODUCT_PACKAGES += \
+    SemcMusic
+
+# AllInOneCalculator
+PRODUCT_PACKAGES += \
+    AllInOneCalculator
+
+# NewPipe
+PRODUCT_PACKAGES += \
+    NewPipe
+
+# Ymusic
+PRODUCT_PACKAGES += \
+    Ymusic
+
+# FDroid
+PRODUCT_PACKAGES += \
+    FDroid
+
+# XdaLab
+#PRODUCT_PACKAGES += \
+#    XdaLab
+
+# ColorNote
+PRODUCT_PACKAGES += \
+    ColorNote
+ 
+# SwiftBackup
+PRODUCT_PACKAGES += \
+    SwiftBackup  
+
+# Betterbatterystats_xdaedition
+#PRODUCT_PACKAGES += \
+#    Betterbatterystats_xdaedition
+
+# Termux
+PRODUCT_PACKAGES += \
+    Termux
+
+# DigiCal
+PRODUCT_PACKAGES += \
+    DigiCal
+    
